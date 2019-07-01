@@ -63,19 +63,23 @@ a{
 .left-container{
   width:50vw;
   height:100%;
-  background-color:#FAFAFA;
+}
+
+.grey{  background-color:#FAFAFA;
 }
 
 .right-container{
   width:50vw;
   height:100%;
-  background-color:white;
+}
+
+.white {  background-color:white;
 }
 
 .copy-container{
   width:60%;
   margin-left:20%;
-height:100%;
+height:auto;
 padding-top:25%;}
 
 
@@ -133,4 +137,35 @@ background: #FA9F96}
 
 
 background: url(my-face.png);
+}
+@media only screen and (max-width: 411px) {
+
+  .container
+  {
+
+    flex-direction: column;
+    height:auto;
+
+  }
+
+#my-face{
+  width:100%;
+  height:auto;
+}
+
+  .left-container{
+    width:100vw;
+
+  }
+
+  .right-container{
+    width:100vw;
+  }
+
+  .copy-container{
+    width:80%;
+    margin-left:10%;
+  height:auto;
+  padding-top:25%;
+padding-bottom:15%;}
 }
